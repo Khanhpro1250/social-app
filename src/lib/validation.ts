@@ -18,3 +18,8 @@ export const loginSchema = z.object({
 });
 
 export type LoginValues = z.infer<typeof loginSchema>;
+
+
+export const createPostShema = z.object({
+  content: requiredString
+})
